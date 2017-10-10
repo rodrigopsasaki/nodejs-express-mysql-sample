@@ -4,6 +4,7 @@ const restify = require('restify');
 // Module packages
 const UserManagementServer = require('./lib/user_management_server');
 const Validations = require('./lib/validations');
+const logger = require('./lib/log');
 
 const server = restify.createServer({
   name: 'UserManagementServer',
@@ -21,5 +22,5 @@ server.put('/users/:userId', UserManagementServer.updateUser);
 server.del('/users/:userId', UserManagementServer.deleteUser);
 
 server.listen(8080, function () {
-  console.log('%s listening at %s', server.name, server.url);
+  logger.info('%s listening at %s', server.name, server.url);
 });
