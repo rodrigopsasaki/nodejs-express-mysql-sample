@@ -1,2 +1,2 @@
-# nodejs-restify-mysql-sample
-Simple project running MySQL and Restify on NodeJS
+# nodejs-express-mysql-sample
+Simple project running MySQL and Express on NodeJS
