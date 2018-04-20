@@ -1,7 +1,7 @@
 {
-  "name": "restify-mysql-sample",
+  "name": "express-mysql-sample",
   "version": "1.0.0",
-  "description": "Sample project using Restify and MySQL",
+  "description": "Sample project using Express and MySQL",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -10,9 +10,8 @@
   "author": "Rodrigo Sasaki",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.3",
     "mysql": "^2.15.0",
-    "restify": "^6.0.1",
-    "restify-errors": "^5.0.0",
     "winston": "^2.4.0"
   },
   "devDependencies": {
